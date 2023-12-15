@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Booking Service</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<h1>Phone Booking Service</h1>
+
+<!-- Input for the phone's serial number -->
+<input type="text" id="phoneIdInput" placeholder="Enter Phone Serial Number">
+<br>
+<input type="text" id="userIdInput" placeholder="Enter your User Name">
+<br>
+<!-- Button to trigger the reservation -->
+<button id="bookButton">Book Phone</button>
+<button id="unbookButton">Unbook Phone</button>
+<br>
+<br>
+<button id="getAll">Get List of Phones</button>
+<table id="phonesTable">
+    <!-- Table rows will be added here dynamically -->
+</table>
+
+</body>
+</html>
