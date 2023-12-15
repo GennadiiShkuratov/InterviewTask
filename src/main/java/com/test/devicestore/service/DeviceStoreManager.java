@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 public interface DeviceStoreManager <D extends Device> {
-    Phone add(Phone phone) throws AddNewDeviceException, DeviceAlreadyExistException;
+    D add(D device) throws AddNewDeviceException, DeviceAlreadyExistException;
 
     List<D> getAllInStock();
 
