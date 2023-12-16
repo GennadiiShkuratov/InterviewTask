@@ -2,9 +2,17 @@
 
 ## Introduction
 
-Before delving into the specifics of the application, I wish to clarify that the primary objective of developing this project was to showcase certain elements of my expertise. It was not intended to be a production-ready solution, even for internal use. Consequently, there are several limitations, including the absence of logging, basic security measures, and a rudimentary user interface. However, I am confident that this application will serve its purpose as a discussion piece for an interview, allowing for an in-depth conversation about its design and potential solutions.
+Before delving into the specifics of the application, I would like to clarify that the primary objective of implementing this task was to showcase certain aspects of expertise. It was not intended to be a production-ready solution, even for internal use. As there are many gaps what not solved in this task such as:
+1) there are no security;
+2) no logging;
+3) data race condition not solved;
+4) raw Rest API need to be review;
+5) Also model does not follow KISS and YAGNI principles, considering simplicity of task requirements. It was designed this way just to show my OOP and design understanding;
 
-Additionally, it is worth noting that the development process exceeded four hours, primarily due to the creation of the webpage and the REST API.
+Also, It is worth noting that the development process exceeded four hours, primarily due to the creation of the webpage and the REST API and integrate adding persistence level.
+
+## Extra documentation
+Classes diagram included in project. For better readability, I removed from picture all supportive classes and left just core. File: /ClassDiagram.png 
 
 ## Installation Instructions
 
