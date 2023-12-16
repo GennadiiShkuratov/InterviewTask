@@ -19,11 +19,13 @@ Classes diagram included in project. For better readability, I removed from pict
 To run the application, please follow these steps:
 
 1. **Install Java Runtime Environment (JRE)** - Version 17 or higher is required.
-2. **Configure Environment Variables**:
+2. **Install Maven** - Version 3 or higher is required.
+3. **Configure Environment Variables**:
     - Add the Java `bin` directory to the `PATH` system environment variable.
     - Create a `JAVA_HOME` system environment variable.
-3. **Check out the Code** - Obtain the code from the repository.
-4. **Run the Application** - Execute the following command from the root directory: 
+    - Add Maven `bin` directory to the `PATH` system environment variable.
+4. **Check out the Code** - Obtain the code from the repository.
+5. **Run the Application** - Execute the following command from the root directory: 
 
 mvn spring-boot:run
 
