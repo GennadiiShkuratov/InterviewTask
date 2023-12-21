@@ -19,7 +19,11 @@ Classes diagram included in project. For better readability, I removed from pict
 To run the application, please follow these steps:
 
 1. **Install Docker**
-2. **Run the Application** - Execute the following command from the root directory: 
+2. **Build Bocker image** - Execute the following command from the root directory:  
+
+docker build -t device-booking .
+
+3. **Run the Application** - Execute the following command from the root directory: 
 
 docker run -d -p 8080:8080 device-booking
 
