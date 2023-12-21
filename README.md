@@ -18,16 +18,10 @@ Classes diagram included in project. For better readability, I removed from pict
 
 To run the application, please follow these steps:
 
-1. **Install Java Runtime Environment (JRE)** - Version 17 or higher is required.
-2. **Install Maven** - Version 3 or higher is required.
-3. **Configure Environment Variables**:
-    - Add the Java `bin` directory to the `PATH` system environment variable.
-    - Create a `JAVA_HOME` system environment variable.
-    - Add Maven `bin` directory to the `PATH` system environment variable.
-4. **Check out the Code** - Obtain the code from the repository.
-5. **Run the Application** - Execute the following command from the root directory: 
+1. **Install Docker**
+2. **Run the Application** - Execute the following command from the root directory: 
 
-mvn spring-boot:run
+docker run -d -p 8080:8080 device-booking
 
 ## UI
 After successful start application will be available by URL: http://localhost:8080/
@@ -43,7 +37,7 @@ The application utilizes an H2 Database.
 
 - **Access Database Console**: Use the URL `http://localhost:8080/h2-console`.
 - **Data Persistence Configuration**: To ensure data persistence (durability), specify the path to the storage location on your computer by setting the Spring datasource URL using `spring.datasource.url` property to app when run:
-  mvn spring-boot:run -Dspring-boot.run.arguments="--spring.datasource.url=jdbc:h2:file:C:/H2DB/DeviceBookingApp;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
+  -Dspring-boot.run.arguments="--spring.datasource.url=jdbc:h2:file:C:/H2DB/DeviceBookingApp;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
 
 Alternatively, configure this in the `application.properties` file.
 
